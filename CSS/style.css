@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/*Navbar*/
+
+nav{
+    display: flex;
+    background-color:white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    justify-content: center;
+    height: 100px;
+    box-shadow: 0px 2px 20px 0px black;
+}
+
+
+
+.href{
+    text-decoration: none;
+    font-size: 150%;
+    font-family:'Oswald', sans-serif;
+    list-style: none;
+    padding: 16px 18px;
+    cursor: pointer;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.onglet-liens li{
+    list-style: none;
+
+}
+
+nav .onglet-liens{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border-bottom: black 2px;
+    padding: 0;
+}
+
+ 
+.href{
+   display: inline-block;
+   position: relative;
+   color: black;
+}
+ 
+.href:after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   transform: scaleX(0);
+   height: 2px;
+   bottom: 0;
+   left: 0;
+   background-color: black;
+   transform-origin: bottom right;
+   transition: transform 0.35s ease-out;
+}
+ 
+.href:hover:after {
+   transform: scaleX(1);
+   transform-origin: bottom left;
+}
+
+
+
+nav ul li{
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.accueil{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../Photo/notebook-phone-tablet-black-white-office-desk.jpg);
+    background-size: cover;
+}
+
+
+.intro{
+    color: white;
+    font-size: 8vw;
+    margin-bottom: 0;
+    font-family:'Oswald', sans-serif;
+}
+
+.sous_intro{
+    color: white;
+    font-size: 4vw;
+    font-family:'Oswald', sans-serif;
+}
+
+.presentation{
+    margin-top: 10%;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.presentation_photo{
+    display: flex;
+    border-radius: 15px;
+    flex-basis: 0;
+    flex-grow: 1;
+    justify-content: center;
+
+}
+.presentation_photo img{
+
+    border-radius: 150px;
+    border-radius: 100%;
+    width: 70%;
+}
+
+
+.presentation_infos{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.presentation_infos p {
+    color: black;
+    font-family:'Oswald', sans-serif;
+    font-size: 1.6vw;
+}
+
+.myself{
+    border-top: 1px solid #eeeeee;
+    list-style: none;
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.myself li{
+    color: black;
+    width: 48%;
+    float: left;
+    font-family:'Oswald', sans-serif;
+    font-size: 1.6vw;
+}
+
+.CV{
+    color: black;
+    font-size: 2vw;
+    font-family:'Oswald', sans-serif;
+    text-decoration: none;
+    background-color: whitesmoke;
+    padding: 15px 35px;
+    text-align: center;
+}
+
+
+.projets_cartes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+
+.carte {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin: 0 10px; 
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    background-color: #fff;
+    opacity: 0; 
+    transform: translateY(100px); 
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.carte.visible {
+    opacity: 1; /* Rendre la carte visible lors de l'animation */
+    transform: translateY(0); /* Annuler le déplacement vers le bas */
+}
+
+.carte:hover {
+    transform: scale(1.05);
+}
+
+.image-carte {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.4s ease;
+}
+
+.flou {
+    filter: blur(5px); /* Appliquer le flou initial */
+}
+
+.contenu-carte {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    color: black;
+    font-size: 1.3vw;
+}
+
+.carte:hover .image-carte {
+    filter: blur(0); 
+}
+
+.carte:hover .contenu-carte {
+    opacity: 0; 
+}
+
+.project_title{
+    color: black;
+    margin-top: 10%;
+    text-align: center;
+    font-size: 2vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: white;
+    display: flex;
+    justify-items: center;
+    width: 100%;
+    margin-top: 50px;
+    align-items: center;
+    box-shadow: 0px -2px 20px black;
+}
+
+.reseaux a{
+   font-size: larger;
+   color: whitesmoke;
+}
+
+.reseaux a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.pages a{
+    list-style: none;
+    padding: 10px;
+    font-size: larger;
+    color: black;
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+.pages a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.pages li{
+    list-style: none;
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+
+
+.reseaux , .pages{
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+@media (max-width: 440px) {
+    nav{
+        height: 171px;
+    }
+}

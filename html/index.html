@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="https://kit.fontawesome.com/262e42b641.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <nav>
+        <ul class="onglet-liens">
+
+            <li>
+                <a class="href" href="index.html"><i class="fa-solid fa-house fa-xs" style="color: #ffffff;"></i>&ensp;Accueil</a>
+            </li>
+
+            <li>
+                <a class="href" href="index.html#projects"><i class="fa-solid fa-magnifying-glass fa-xs" style="color: #ffffff;"></i>&ensp;Projets</a>
+            </li>
+            <li>
+                <a class="href" href="contact.html"><i class="fa-solid fa-magnifying-glass fa-xs" style="color: #ffffff;"></i>&ensp;Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+
+<section class="accueil">
+    <h1 class="intro">Hi, <br> I am Martin</h1>
+    <h2 class="sous_intro"> Apprenti Développeur</h2>
+</section>
+
+
+<section class="presentation">
+    <section class="presentation_photo">
+        <img src="../Photo/myself2.jpg" alt="photo personelle Crocquevieille Martin">
+    </section>
+    <section class="presentation_infos">
+        <p>Bonjour, <br> Je suis Martin Crocquevieille, Actuellement en première année d'un bachelor 
+            en vue d'un master Expert
+            Informatique et Systèmes
+            d'Informations, je suis un étudiant
+            curieux et organisé.
+        </p>
+        <ul class="myself">
+            <li><strong>Nom:</strong>
+                Crocquevieille Martin</li>
+            <li><strong>Age:</strong>
+                20 ans</li>
+            <li> <strong>Parcours:</strong> 
+                Première année d'un bachelor 
+                informatique à Supinfo</li>
+            <li><strong>Passions:</strong>
+                Course à pied, astronomie, aéronautique, histoire</li>
+        </ul>
+        <a href="../Photo/CV CROCQUEVIEILLE MARTIN  (1).pdf" class="CV"> Visionner mon CV: </a>
+    </section>
+</section>
+
+<section class="project_title">
+    <h1>Projets:</h1>
+</section>
+
+<section class="projets_cartes" id="projects">
+    <section class="carte" onclick="redirigerVersProjet('projet1.html')" onmouseover="survolImage('image1')" onmouseout="finSurvolImage('image1')">
+        <img src="../Photo/photoprojet1.png" alt="Projet 1" class="image-carte flou" id="image1">
+        <div class="contenu-carte">
+            <h3>Ecran Magique</h3>
+            <p>Site "from scratch" sur les films en tendance (API)</p>
+        </div>
+    </section>
+
+    <section class="carte" onclick="redirigerVersProjet('projet2.html')" onmouseover="survolImage('image2')" onmouseout="finSurvolImage('image2')">
+        <img src="../Photo/photoprojet2.jpg" alt="Projet 2" class="image-carte flou" id="image2">
+        <div class="contenu-carte">
+            <h3>Puissance - Cavalier</h3>
+            <p>Jeu de plateau en python</p>
+        </div>
+    </section>
+
+    <section class="carte" onclick="redirigerVersProjet('#')" onmouseover="survolImage('image3')" onmouseout="finSurvolImage('image3')">
+        <img src="../Photo/photoprojet3.png" alt="Projet 3" class="image-carte flou" id="image3">
+        <div class="contenu-carte">
+            <h3>Gotta catch ém all</h3>
+            <p>Prochainement..</p>
+        </div>
+    </section>
+
+
+
+</section>
+
+
+
+
+</section>
+
+
+
+
+
+
+<footer>
+
+    <section class="pages">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#">Retour haut de page</a></li>
+            <li><a href="index.html#projects">Projets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+    </section>
+
+    <section class="reseaux">
+        <ul class="sociaux"></ul>
+            <a href="https://github.com/CrocqueM" target="_blank"><i class="fa-brands fa-github fa-2x" style="color: #000000;margin-right: 10px;"></i></a><br>
+
+            <a href="https://www.linkedin.com/in/crocquevieille-martin/" target="_blank"><i class="fa-brands fa-linkedin fa-2x" style="color: #2d73a9; margin-right: 10px;"></i></a><br>
+
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="fa-brands fa-youtube fa-2x" style="color: red;margin-right: 10px;" ></i></a>
+      
+    </section>
+</footer>
+
+
+    
+<script src="../JS/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <script src="https://kit.fontawesome.com/262e42b641.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+<nav>
+    <ul class="onglet-liens">
+
+        <li>
+            <a class="href" href="index.html"><i class="fa-solid fa-house fa-xs" style="color: #ffffff;"></i>&ensp;Accueil</a>
+        </li>
+
+        <li>
+            <a class="href" href="index.html#projects"><i class="fa-solid fa-magnifying-glass fa-xs" style="color: #ffffff;"></i>&ensp;Projets</a>
+        </li>
+        <li>
+            <a class="href" href="contact.html"><i class="fa-solid fa-magnifying-glass fa-xs" style="color: #ffffff;"></i>&ensp;Contact</a>
+        </li>
+    </ul>
+</nav> 
+
+
+<body>
+    <section class="form-contact">
+        <form class="form-contact" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="e4338429-7474-41d6-b963-09f7e8bdbb6b">
+            <section class="form-left-column">
+                <label for="email"></label>
+                <input type="email" id="email" name="email" autocomplete="email" required placeholder="Email *">
+    
+                <label for="first-name"></label>
+                <input type="text" id="first-name" name="first-name" required placeholder="Prénom *">
+    
+                <label for="last-name"></label>
+                <input type="text" id="last-name" name="last-name" autocomplete="family-name" required placeholder="Nom *">
+    
+                <label for="phone"></label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" required placeholder="Téléphone *">
+    
+                <label for="message"></label>
+                <textarea name="message" id="message" cols="20" rows="10" required placeholder="  Votre message: *"></textarea>
+    
+                <input class="button-submit" type="submit" value="Envoyer">
+            </section>
+        </form>
+    </section>
+
+
+
+
+    <footer>
+
+        <section class="pages">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#">Retour haut de page</a></li>
+                <li><a href="index.html#projects">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+    
+            </ul>
+        </section>
+    
+        <section class="reseaux">
+            <ul class="sociaux"></ul>
+                <a href="https://github.com/CrocqueM" target="_blank"><i class="fa-brands fa-github fa-2x" style="color: #000000;margin-right: 10px;"></i></a><br>
+    
+                <a href="https://www.linkedin.com/in/crocquevieille-martin/" target="_blank"><i class="fa-brands fa-linkedin fa-2x" style="color: #2d73a9; margin-right: 10px;"></i></a><br>
+    
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="fa-brands fa-youtube fa-2x" style="color: red;margin-right: 10px;" ></i></a>
+          
+        </section>
+    </footer>
+
+</body>
+</html>
