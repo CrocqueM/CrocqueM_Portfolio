@@ -170,7 +170,7 @@ nav ul li{
 
 .CV{
     color: black;
-    font-size: 2vw;
+    font-size: 130%;
     font-family:'Oswald', sans-serif;
     text-decoration: none;
     background-color: white;
@@ -181,6 +181,9 @@ nav ul li{
 
 /* Présentation des projets */ 
 
+.annonce_projets{
+    font-size: 200%;
+}
 
 .projets_cartes{
     display: flex;
