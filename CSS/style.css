@@ -86,6 +86,10 @@ nav ul li{
 
 
 
+
+
+
+
 /* 1ère partie: accueil*/
 .accueil{
     display: flex;
@@ -147,6 +151,7 @@ nav ul li{
     color: black;
     font-family:'Oswald', sans-serif;
     font-size: 130%;
+    text-align: center;
 }
 
 .myself{
