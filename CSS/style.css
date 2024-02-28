@@ -78,14 +78,15 @@ nav .onglet-liens{
    transform-origin: bottom left;
 }
 
-
-
 nav ul li{
     float: left;
     text-align: center;
     position: relative;
 }
 
+
+
+/* 1ère partie: accueil*/
 .accueil{
     display: flex;
     flex-direction: column;
@@ -106,6 +107,9 @@ nav ul li{
     font-size: 4vw;
     font-family:'Oswald', sans-serif;
 }
+
+
+/* Présentation myself*/
 
 .presentation{
     margin-top: 10%;
@@ -169,6 +173,9 @@ nav ul li{
     padding: 15px 35px;
     text-align: center;
 }
+
+
+/* Présentation des projets */ 
 
 
 .projets_cartes{
@@ -269,7 +276,6 @@ nav ul li{
 
 
 
-
 footer{
     background-color: white;
     display: flex;
@@ -323,10 +329,12 @@ footer{
 
 
 
-@media (max-width: 485px) {
+@media (max-width: 500px) {
     nav{
         height: 171px;
     }
+
+
 }
 
 
@@ -338,4 +346,10 @@ footer{
     .presentation_photo img{
         width: 50%;
     }
+    .projets_cartes{
+        flex-direction: column;
+    }
+    body {
+        font-size: 3vw; 
+      }
 }
