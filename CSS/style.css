@@ -146,8 +146,6 @@ nav ul li{
     color: black;
     font-family:'Oswald', sans-serif;
     font-size: 130%;
-    text-align: center;
-
 }
 
 .myself{
@@ -359,6 +357,12 @@ footer{
     body {
         font-size: 3vw; 
       }
+    .carte {
+        margin-bottom: 20px; /* Ajoutez de l'espace en dessous des cartes */
+    }
+    .carte .image-carte {
+        filter: blur(0); /* Désactivez le flou */
+    }
 }
 
 

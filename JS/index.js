@@ -35,7 +35,6 @@ function redirigerVersProjet(page) {
 }
 
 
-
 document.addEventListener('DOMContentLoaded', function() {
     var cartes = document.querySelectorAll('.carte');
 
