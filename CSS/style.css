@@ -8,7 +8,7 @@ html{
 body{
     margin: 0;
     padding: 0;
-    color: white;
+    background-color: whitesmoke;
 }
 
 /*Navbar*/
@@ -165,7 +165,7 @@ nav ul li{
     font-size: 2vw;
     font-family:'Oswald', sans-serif;
     text-decoration: none;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 15px 35px;
     text-align: center;
 }
@@ -196,8 +196,8 @@ nav ul li{
 }
 
 .carte.visible {
-    opacity: 1; /* Rendre la carte visible lors de l'animation */
-    transform: translateY(0); /* Annuler le déplacement vers le bas */
+    opacity: 1; 
+    transform: translateY(0); 
 }
 
 .carte:hover {
@@ -212,7 +212,7 @@ nav ul li{
 }
 
 .flou {
-    filter: blur(5px); /* Appliquer le flou initial */
+    filter: blur(5px); 
 }
 
 .contenu-carte {
@@ -323,8 +323,19 @@ footer{
 
 
 
-@media (max-width: 440px) {
+@media (max-width: 485px) {
     nav{
         height: 171px;
+    }
+}
+
+
+@media(max-width: 500px) {
+
+    .presentation{
+        flex-direction: column;
+    }
+    .presentation_photo img{
+        width: 50%;
     }
 }
