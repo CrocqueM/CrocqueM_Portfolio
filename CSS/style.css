@@ -139,12 +139,15 @@ nav ul li{
     flex-basis: 0;
     flex-grow: 1;
     justify-content: center;
+    align-items: center;
 }
 
 .presentation_infos p {
     color: black;
     font-family:'Oswald', sans-serif;
-    font-size: 1.6vw;
+    font-size: 130%;
+    text-align: center;
+
 }
 
 .myself{
@@ -153,6 +156,7 @@ nav ul li{
     padding: 0px;
     padding-top: 20px;
     padding-bottom: 20px;
+    text-align: center;
 }
 
 
@@ -161,7 +165,7 @@ nav ul li{
     width: 48%;
     float: left;
     font-family:'Oswald', sans-serif;
-    font-size: 1.6vw;
+    font-size: 130%;
 }
 
 .CV{
@@ -232,7 +236,7 @@ nav ul li{
     opacity: 1;
     transition: opacity 0.4s ease;
     color: black;
-    font-size: 1.3vw;
+    font-size: 150%;
 }
 
 .carte:hover .image-carte {
@@ -352,4 +356,15 @@ footer{
     body {
         font-size: 3vw; 
       }
+}
+
+
+@media(max-width: 1000px){
+
+    .presentation{
+        flex-direction: column;
+    }
+    .presentation_photo img{
+        width: 40%;
+    }
 }
