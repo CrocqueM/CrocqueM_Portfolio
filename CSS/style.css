@@ -115,6 +115,7 @@ nav ul li{
     margin-top: 10%;
     margin-bottom: 50px;
     display: flex;
+    border-bottom: 2px solid #eeeeee;
 }
 
 .presentation_photo{
@@ -288,7 +289,7 @@ footer{
     width: 100%;
     margin-top: 50px;
     align-items: center;
-    box-shadow: 0px -2px 20px black;
+    box-shadow: 0px 9px 20px black;
 }
 
 .reseaux a{
@@ -358,10 +359,10 @@ footer{
         font-size: 3vw; 
       }
     .carte {
-        margin-bottom: 20px; /* Ajoutez de l'espace en dessous des cartes */
+        margin-bottom: 20px;
     }
     .carte .image-carte {
-        filter: blur(0); /* Désactivez le flou */
+        filter: blur(0);
     }
 }
 
